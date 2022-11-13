@@ -1,7 +1,7 @@
 @extends('auth.layouts')
 @section('title', trans('home.reset_password_title'))
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/pages/css/login-2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/login-2.min.css" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <!-- BEGIN REGISTRATION FORM -->

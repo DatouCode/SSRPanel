@@ -1,6 +1,6 @@
 @extends('admin.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <!-- BEGIN CONTENT BODY -->
@@ -25,7 +25,7 @@
                     <div class="portlet light profile-sidebar-portlet bordered">
                         <!-- SIDEBAR USERPIC -->
                         <div class="profile-userpic">
-                            <img https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/images/avatar.png" class="img-responsive" alt=""> </div>
+                            <img src="/assets/images/avatar.png" class="img-responsive" alt=""> </div>
                         <!-- END SIDEBAR USERPIC -->
                         <!-- SIDEBAR USER TITLE -->
                         <div class="profile-usertitle">

@@ -332,10 +332,10 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/clipboardjs/clipboard.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/pages/scripts/components-clipboard.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/jquery-qrcode/jquery.qrcode.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/clipboardjs/clipboard.min.js" type="text/javascript"></script>
+    <script src="/assets/pages/scripts/components-clipboard.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/jquery-qrcode/jquery.qrcode.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         // 在线安装警告提示

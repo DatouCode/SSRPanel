@@ -1,6 +1,6 @@
 @extends('admin.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <!-- BEGIN CONTENT BODY -->
@@ -87,7 +87,7 @@
                                     <div class="col-md-6">
                                         <div class="fileinput fileinput-new" data-provides="fileinput">
                                             <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                <img https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/images/noimage.png" alt="" /> </div>
+                                                <img src="/assets/images/noimage.png" alt="" /> </div>
                                             <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                                             <div>
                                                 <span class="btn default btn-file">
@@ -127,7 +127,7 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
     <script src="/js/ueditor/ueditor.config.js" type="text/javascript" charset="utf-8"></script>
     <script src="/js/ueditor/ueditor.all.js" type="text/javascript" charset="utf-8"></script>
 

@@ -1,7 +1,7 @@
 @extends('admin.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css"/>
     <style type="text/css">
         input,select {
             margin-bottom: 5px;

@@ -36,7 +36,7 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/echarts/echarts.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/echarts/echarts.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('chart1'));

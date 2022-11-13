@@ -1,7 +1,7 @@
 @extends('admin.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         input,select {
             margin-bottom: 5px;
@@ -196,7 +196,7 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/clipboardjs/clipboard.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/clipboardjs/clipboard.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         // 导出原版json配置
         function exportSSJson() {

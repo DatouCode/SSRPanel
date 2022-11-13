@@ -1,6 +1,6 @@
 @extends('user.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/pages/css/invoice-2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/invoice-2.min.css" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <!-- BEGIN CONTENT BODY -->
@@ -93,7 +93,7 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/SSRPanel/public/js/layer/layer.js" type="text/javascript"></script>
+    <script src="/js/layer/layer.js" type="text/javascript"></script>
     <script type="text/javascript">
         // 校验优惠券是否可用
         function redeemCoupon() {

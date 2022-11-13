@@ -13,13 +13,13 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN THEME GLOBAL STYLES -->
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="/assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <!-- END THEME GLOBAL STYLES -->
     <!-- BEGIN PAGE LEVEL STYLES -->
     @yield('css')
@@ -35,7 +35,7 @@
         @if(\App\Components\Helpers::systemConfig()['website_home_logo'])
             <a href="{{url('/')}}"> <img src="{{\App\Components\Helpers::systemConfig()['website_home_logo']}}" alt="" style="max-width:300px; max-height:90px;"/> </a>
         @else
-            <a href="{{url('/')}}"> <img https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/images/home_logo.png" alt="" /> </a>
+            <a href="{{url('/')}}"> <img src="/assets/images/home_logo.png" alt="" /> </a>
         @endif
     </div>
     <!-- END LOGO -->
@@ -75,13 +75,16 @@
 
     <!-- END LOGIN -->
     <!--[if lt IE 9]>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/respond.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/excanvas.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/ie8.fix.min.js"></script>
+    <script src="/assets/global/plugins/respond.min.js"></script>
+    <script src="/assets/global/plugins/excanvas.min.js"></script>
+    <script src="/assets/global/plugins/ie8.fix.min.js"></script>
     <![endif]-->
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     @yield('script')
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122312249-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}

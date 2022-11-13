@@ -1,7 +1,7 @@
 @extends('user.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <!-- BEGIN CONTENT BODY -->
@@ -50,7 +50,7 @@
                                     <div class="timeline-item">
                                         <div class="timeline-badge">
                                             @if($reply->user->is_admin)
-                                                <img class="timeline-badge-userpic" https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/images/avatar.png">
+                                                <img class="timeline-badge-userpic" src="/assets/images/avatar.png">
                                             @else
                                                 <div class="timeline-icon">
                                                     <i class="icon-user font-green-haze"></i>
@@ -149,7 +149,7 @@
                 }
             });
         }
-
+      
         // 回复工单
         function replyTicket() {
             var content = UE.getEditor('editor').getContent();
@@ -158,7 +158,7 @@
                 layer.alert('您未填写工单内容', {icon: 2, title:'提示'});
                 return false;
             }
-
+            
             layer.confirm('确定回复工单？', {icon: 3, title:'提示'}, function(index) {
                 $.post("{{url('replyTicket')}}",{_token:'{{csrf_token()}}', id:'{{$ticket->id}}', content:content}, function(ret) {
                     layer.msg(ret.message, {time:1000}, function() {
@@ -169,6 +169,6 @@
                 });
                 layer.close(index);
             });
-        }
+        }         
     </script>
 @endsection

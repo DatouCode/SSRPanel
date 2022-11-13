@@ -101,7 +101,7 @@
                                         @foreach($orderList as $order)
                                             <tr>
                                                 <td> {{$order->oid}} </td>
-                                                <td>
+                                                <td> 
                                                     @if(empty($order->user) )
                                                         【账号不存在】
                                                     @else
@@ -164,7 +164,7 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/laydate/laydate.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/laydate/laydate.js" type="text/javascript"></script>
     <script type="text/javascript">
         // 有效期
         laydate.render({

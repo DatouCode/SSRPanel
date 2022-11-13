@@ -1,10 +1,10 @@
 @extends('admin.layouts')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     <!-- BEGIN CONTENT BODY -->
@@ -766,7 +766,7 @@
                                                                     @if ($website_home_logo)
                                                                         <img src="{{$website_home_logo}}" alt="" />
                                                                     @else
-                                                                        <img https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/images/noimage.png" alt="" />
+                                                                        <img src="/assets/images/noimage.png" alt="" />
                                                                     @endif
                                                                 </div>
                                                                 <span class="help-block"> 推荐尺寸：300 X 90，透明背景 </span>
@@ -790,7 +790,7 @@
                                                                     @if ($website_logo)
                                                                         <img src="{{$website_logo}}" alt="" />
                                                                     @else
-                                                                        <img https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/images/noimage.png" alt="" />
+                                                                        <img src="/assets/images/noimage.png" alt="" />
                                                                     @endif
                                                                 </div>
                                                                 <span class="help-block"> 推荐尺寸：150 X 30，透明背景 </span>
@@ -1132,9 +1132,9 @@
     <!-- END CONTENT BODY -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         // 注册的默认标签
@@ -2789,6 +2789,6 @@
                 });
             });
         }
-
+        
     </script>
 @endsection

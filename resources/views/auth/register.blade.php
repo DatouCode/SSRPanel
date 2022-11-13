@@ -1,16 +1,16 @@
 @extends('auth.layouts')
 @section('title', trans('register.title'))
 @section('css')
-    <link href="https://cdn.jsdelivr.net/gh/DatouCode/ssrpanel/public/assets/pages/css/login-2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/pages/css/login-2.min.css" rel="stylesheet" type="text/css" />
     <style>
-        @media screen and (max-height: 575px){
+        @media screen and (max-height: 575px){  
             .g-recaptcha {
                 -webkit-transform:scale(0.81);
                 transform:scale(0.81);
-                -webkit-transform-origin:0 0;
+                -webkit-transform-origin:0 0; 
                 transform-origin:0 0;
             }
-        }
+        }  
         .geetest_holder.geetest_wind {
             min-width: 245px !important;
         }
@@ -104,7 +104,7 @@
     <!-- END REGISTRATION FORM -->
 @endsection
 @section('script')
-    <script src="https://cdn.jsdelivr.net/gh/DatouCode/SSRPanel/public/js/layer/layer.js" type="text/javascript"></script>
+    <script src="/js/layer/layer.js" type="text/javascript"></script>
     <script type="text/javascript">
         // 登录
         function login() {
@@ -190,7 +190,7 @@
         // 生成提示
         function Msg(clear, msg, type) {
             if ( !clear ) $('.register-form .alert').remove();
-
+            
             var typeClass = 'alert-danger',
                 clear = clear ? clear : false,
                 $elem = $('.register-form');
@@ -199,7 +199,7 @@
             var tpl = '<div class="alert ' + typeClass + '">' +
                     '<button type="button" class="close" onclick="$(this).parent().remove();"></button>' +
                     '<span> ' + msg + ' </span></div>';
-
+            
             if ( !clear ) {
                 $elem.prepend(tpl);
             } else {
